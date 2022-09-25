@@ -1,0 +1,207 @@
+html, body
+{
+	margin: 0;
+	height: 100%;
+
+	background-color: #1d1920;
+	color: #f9f4d7;
+
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+.title
+{
+	font-size: 40px;
+	transform: scale(1.2, 0.8);
+	font-family: 'Open Sans Ultra-Bold', sans-serif;
+	letter-spacing: -2.5px;
+	font-style: italic;
+	font-weight: 900;
+}
+
+
+body img {
+  position: absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+.poemPage
+{
+/*	height: 100%;*/
+	width: 100%;
+
+	position: relative;
+	z-index: 3;
+}
+
+.poemTitle
+{
+	display: inline-block;
+	transform: scale(1.2, 0.8);
+	font-family: 'Open Sans Ultra-Bold', sans-serif;
+	letter-spacing: -2.5px;
+	font-style: italic;
+	font-weight: 900;
+
+	z-index: 3;
+}
+
+.poemText
+{
+	z-index: 3;
+}
+
+
+#aboutTab {text-align: justify}
+
+
+
+
+#sidebar
+{
+    top: 25%;
+	z-index: 3;
+}
+
+#sidebar ul {list-style: none}
+
+#sidebar img {width: 100%}
+
+
+a
+{
+	text-decoration: none;
+	color: #fbeed5;
+}
+
+a:hover
+{
+	color: #f9f4d7;
+	text-shadow: 0 0 5px #f9f4d7
+}
+
+.header
+{
+	width: 100%;
+
+	position: fixed;
+
+	z-index: 9;
+
+	top: 0;
+	left: 0;
+
+	background: #25233E;
+
+	font-size: 80px;
+	text-align: center;
+
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#headerTitle img
+{
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+
+
+
+#menu
+{
+	height: 100%;
+	position: fixed;
+
+	z-index: 10;
+
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	overflow-x: hidden;
+
+	background: #25233E;
+
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#menu a
+{
+	text-decoration: none;
+}
+
+#menu ul
+{
+	list-style: none;
+}
+
+
+#menu ul a
+{
+	text-decoration: none;
+	color: #fbeed5;
+}
+
+#menu ul a:active
+{
+	color: #7ED2C8;
+	text-shadow: 0 0 5px #f9f4d7;
+}
+
+#menu img
+{
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+
+
+
+#photos {z-index: 1; position: absolute; transition: opacity 1s ease-in-out;}
+
+/*For desktop*/
+@media all and (orientation:landscape)
+{
+	.header, #menu, #aboutTab
+	{
+		display: none;
+	}
+}
+
+
+
+/*For mobile*/
+@media all and (orientation:portrait)
+{
+	.container
+	{
+		padding: 0px !important;
+	}
+
+	#menu, #aboutTab
+	{
+		display: none;
+	}
+}

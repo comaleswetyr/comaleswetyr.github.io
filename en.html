@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>SWEET TYRANT</title>
+	  	<meta charset="UTF-8"/>
+
+	  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+		<link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
+
+	  	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+	  	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	  	<script src="js/mobileMenu.js"></script>
+	  	<script src="js/hideShowTabs.js"></script>
+	</head>
+
+	<body>
+		<img id="photos" src="" style="opacity: 0"/>
+
+		<div class="container">
+			<div class="header">
+				<div class="row">
+					<div class="col-1 d-flex flex-column justify-content-center align-items-center" id="hamburger">
+						<a href="#"><b>+</b></a>
+					</div>
+
+					<div class="col-10" id="headerTitle"><a href="index.html"><img src="img/title_en_blur.png"></a></div>
+
+					<!--<div class="col-1 d-flex flex-column justify-content-center align-items-center">+</div> -->
+				</div>
+			</div>
+
+			<div class="justify-content-center align-items-center" id="menu">
+				<img src="img/title_en_full_stacked.png">
+				<br><br><br><br><br><br>
+				<ul>
+					<li><div class = "maincategory"><a id="poems" href="#top">poems</a></div></li></li>
+					<ul>
+						<li><div class = "poemsubcategory"><a href="#p01">AUTOPILOT</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p02">BRITNEY BUZZCUT</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p03">WHAT'S YOUR NAME</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p04">GOOD FIRST IMPRESSION</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p05">IT'S NOT PERSONAL</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p06">PRIDE AND STRESS</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p07">SWEET TYRANT</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p08">SENT</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p09">THE BASTARD</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p10">SORRY FOR WHAT I SAID</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p11">COLOSSEUM</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p12">GOLDEN CHILD</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p13">1/2</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p14">PAIN & PLEASURE</a></div></li>
+					</ul>
+					<li><div class = "maincategory"><a id="about" href="#">about</a></div></li>
+					<li><a href="#dl">download</a></li>
+					<li><a href="el.html">ελ</a></li>
+				</ul>
+			</div>
+
+		<div class="row">
+			<div class="col-xl-4 d-none d-lg-block">
+				<div class="position-fixed" id="sidebar">
+					<a href="index.html"><img src="img/title_en_full_stacked_sidebar.png"></a>
+					<br><br><br><br><br>
+					<ul>
+						<li><div class = "maincategory"><a id="poems" href="#top">poems</a></div></li></li>
+						<ul>
+							<li><div class = "poemsubcategory"><a href="#p01">AUTOPILOT</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p02">BRITNEY BUZZCUT</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p03">WHAT'S YOUR NAME</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p04">GOOD FIRST IMPRESSION</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p05">IT'S NOT PERSONAL</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p06">PRIDE AND STRESS</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p07">SWEET TYRANT</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p08">SENT</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p09">THE BASTARD</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p10">SORRY FOR WHAT I SAID</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p11">COLOSSEUM</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p12">GOLDEN CHILD</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p13">1/2</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p14">PAIN & PLEASURE</a></div></li>
+						</ul>
+						<li><div class = "maincategory"><a id="about" href="#aboutTab">about</a></div></li>
+						<li><a href="#dl">download</a></li>
+						<li><a href="el.html">ελ</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-xl-8 col-lg-12" id="textarea" style="text-shadow: 0 0 5px #f9f4d7">
+				<div id="poemsTab">
+					<a name = "top"></a>
+					<div class="poemPage" id="p01">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>AUTOPILOT</h2></div>
+							<br>
+							trying not to think about my future<br>
+							got my neck marked with thick dashes<br>
+							as a souvenir<br>
+							i carry my own weight wherever i go<br>
+							rookie's stress<br>
+							with some seasoned vet's flair<br>
+							<br>
+							the only fear is time<br>
+							i seesaw from sleep to tremors<br>
+							so the dust won't sit on me<br>
+							everything on autopilot<br>
+							days get full and emptied out<br>
+							like clinking glasses<br>
+							<br>
+							i faint inside these walls like echoes<br>
+							said the circumstances wouldn't ever break me<br>
+							till they broke me<br>
+							what's the point in writing lyrics anymore<br>
+							if they don't rip the seams off people's heads<br>
+							as we get buried deeper by the algorithm
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p02">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>BRITNEY BUZZCUT</h2></div>
+							<br>
+							when did hell crawl back up here<br>
+							running out of streets to walk your thoughts off<br>
+							you keep clipping off the map<br>
+							trees no longer growing taller<br>
+							so you cannot hang yourself<br>
+							<br>
+							my keys my phone my kevlar<br>
+							snipers peeking from the rooftops<br>
+							people bite each other<br>
+							trying to wake up from their own presence<br>
+							no one's sleeping anymore<br>
+							<br>
+							when did hell crawl back up here<br>
+							how don't people rock the britney buzzcut<br>
+							war sirens keep buzzing from their heads<br>
+							how to fit a life on weekends<br>
+							cheap ass noodles and playing tetris with the days left<br>
+							<br>
+							they grew up<br>
+							iron out their backbones bending over<br>
+							still does not sit well around the shoulders<br>
+							dress each morning to the nines<br>
+							just in case they leave in coffins by the afternoon
+						<br><br><br>
+					</div>
+	 				<div class="poemPage" id="p03">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>WHAT'S YOUR NAME</h2></div>
+							<br>
+							you're walking like you're dancing<br>
+							you carve me like a spoon<br>
+							you're lemonade and honey<br>
+							heaven's hiding in your arms<br>
+							you know it<br>
+							i will love you like i won't leave<br>
+							i just need some space<br>
+							on a narrow mattress<br>
+							folding myself to fit your handles<br>
+							bret hart<br>
+							with my heart in my back pocket<br>
+							guess i never was too good with first impressions<br>
+							still don't know how i should call you to write it for you with my tongue<br>
+							what's your name madam
+					</div>
+					<div class="poemPage" id="p04">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>GOOD FIRST IMPRESSION</h2></div>
+							<br>
+							no good first impressions<br>
+							no more hugs and handshakes<br>
+							barbed wire wrapped around my arms<br>
+							i twist my body as if dancing<br>
+							so passers-by stop pass right through me<br>
+							muffled sobs and sunken eyes<br>
+							guilt kicking my guts on tempo<br>
+							like a clock on top of a bomb<br>
+							no i don't trust y'all<br>
+							it's not personal<br>
+							i wish<br>
+							i would love to<br>
+							but i'm not here to justify my existence<br>
+							it would be enough for me to have some mutual understanding<br>
+							when i say that i'm tired<br>
+							but it doesn't matter<br>
+							it's been late too<br>
+							got some work to do<br>
+							empty people blow themselves up down the street<br>
+							i run after them to hug them
+					</div>
+					<div class="poemPage" id="p05">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>IT'S NOT PERSONAL</h2></div>
+							<br>
+							i don't know why i am leaving<br>
+							it's not personal<br>
+							you cannot make me stay<br>
+							and if you leave i'm gonna let you
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p06">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>PRIDE AND STRESS</h2></div>
+							<br>
+							smoking on the traffic islands<br>
+							waiting for the green light<br>
+							my people are getting old<br>
+							yet still dive for the cross<br>
+							just to feel their muscles loose<br>
+							pride and stress<br>
+							hands 'round necks<br>
+							overpriced one room apartments with a window open to let the dream breathe<br>
+							my people dance the night away like they're on fire<br>
+							in front of speakers<br>
+							till their brains start leaking on their chests<br>
+							this city's just a pair of handcuffs at the bottom of the sea<br>
+							they're in too deep now for their voices to be heard
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p07">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>SWEET TYRANT</h2></div>
+							<br>
+							i grow and fill my body<br>
+							i have changed<br>
+							and if you saw me on the street you might not recognize me<br>
+							or i wouldn't talk to you<br>
+							<br>
+							don't ask<br>
+							<br>
+							you were searching open wounds on me to kiss<br>
+							at least when you were in the mood<br>
+							but i'm not there<br>
+							and i don't know if i will be here till tomorrow<br>
+							<br>
+							i'm on the ropes<br>
+							<br>
+							maybe you're holding back on your touch still<br>
+							maybe you're out there looking for what i gave you to other people<br>
+							maybe you missed me because i wasn't on top of you for a while<br>
+							maybe you really wouldn't recognize me after all<br>
+							<br>
+							you were my sweetest tyrant<br>
+							<br>
+							bare thoughts<br>
+							that's all<br>
+							hope you like it<br>
+							i am never gonna write about you ever again
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p08">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>SENT</h2></div>
+							<br>
+							don't get angry<br>
+							if i stop answering one day<br>
+							<br>
+							i am fine<br>
+							i am safe<br>
+							i'm not here
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p09">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>THE BASTARD</h2></div>
+							<br>
+							i fold my body on a couch<br>
+							slip through slits upon my forehead<br>
+							ongoing grudges since sixteen<br>
+							my mind's drained<br>
+							used to expecting things in vain<br>
+							but a friend is coming later to pick me up from here<br>
+							<br>
+							the ceiling's flashing<br>
+							voices echo in my ears<br>
+							i'm the bastard<br>
+							and i'm clipping through the walls<br>
+							trynna find a narrow corner to fit my body in<br>
+							but a friend is coming later to pick me up from here<br>
+							<br>
+							wrist chains turned to hula hoops<br>
+							all i had put in a bag<br>
+							and i dance my fingers on it<br>
+							hanging around to kill some time<br>
+							minutes passing like whole hours<br>
+							but a friend is coming later to pick me up from here<br>
+							<br>
+							almost there<br>
+							waiting near the intersection<br>
+							hiding from the harsh street lights<br>
+							my hand raised ready to hitchhike<br>
+							but no single soul is coming<br>
+							my friend must be stuck in traffic
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p10">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>SORRY FOR WHAT I SAID</h2></div>
+							<br>
+							sorry for what i said<br>
+							but i still meant every word<br>
+							opened up cause i was dazed<br>
+							i could not<br>
+							although i wanted to<br>
+							cry out loud<br>
+							damage dried my eyes out
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p11">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>COLOSSEUM</h2></div>
+							<br>
+							i shouldn't be here<br>
+							since poetry can't feel the pulse<br>
+							can't read the room<br>
+							i beat my people inside the colosseum<br>
+							for small pieces of attention<br>
+							or my head served on a platter<br>
+							<br>
+							i shouldn't be here<br>
+							push back further in my head the way i'm living<br>
+							regrets like chandeliers low hanging from the ceiling<br>
+							i can't sleep at night<br>
+							i see them falling down on my neck<br>
+							and i'm drowning<br>
+							<br>
+							i shouldn't be here<br>
+							to the boiling point<br>
+							the veins are popping out<br>
+							my fuse is short<br>
+							i hear my name thrown as a slur<br>
+							in the voices of the living folk
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p12">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>GOLDEN CHILD</h2></div>
+							<br>
+							i felt the need to make you proud once<br>
+							to have something to say about me when people asked<br>
+							a golden child<br>
+							but with a green neck<br>
+							and deep bruises on my ego<br>
+							i look for handles on people's bodies to hold on to<br>
+							i look for joy in pharmacies far from home<br>
+							i stopped responding to how are you with i'm good<br>
+							moving further with my colors dripping off<br>
+							so you don't mind going to my funeral<br>
+							i felt the need to make you proud once<br>
+							to have something to say about me when people asked<br>
+							but you know<br>
+							you know me<br>
+							i was never really built like that
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p13">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>1/2</h2></div>
+							<br>
+							they hug you then they're tearing you to pieces<br>
+							you don't know if you love them or their attention<br>
+							you were little<br>
+							and you're not what you once were<br>
+							you stayed inside way too long<br>
+							and you don't know what is left out there for you<br>
+							but i promise you you're so much more than a half<br>
+							the sea inside you reminds me of mine<br>
+							same waves<br>
+							same shape<br>
+							yet the salt is still upon you<br>
+							you are tongue tied and no voice comes out anymore<br>
+							i know i know i know<br>
+							they stamped the pride out of your eyes<br>
+							but one day we'll leave together<br>
+							until then though<br>
+							i will look after you within the frozen time<br>
+							and if they dare to lay hands on you again<br>
+							i swear<br>
+							imma fuck them up
+						<br><br><br>
+					</div>
+					<div class="poemPage" id="p14">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>PAIN & PLEASURE</h2></div>
+							<br>
+							sun is taking far too long to explode<br>
+							hanging from the night lights<br>
+							i'm still killing time here<br>
+							people passing by yet only catching shadows<br>
+							dunno if they run away or run right at me<br>
+							heart logged off<br>
+							cause my thirst made me a monster<br>
+							to the ones that really touched me<br>
+							but it's too late for worn out souls<br>
+							i'm a sweet tyrant with a barbed wire crown<br>
+							pitch black eyes give away my tears of joy<br>
+							as i'm staring down the loop<br>
+							the loop<br>
+							the loop<br>
+							made of pain and pleasure<br>
+							nights like this i sing until my voice breaks<br>
+							sorry in case you wake up early tomorrow<br>
+							can't stay home tonight
+						<br><br><br>
+					</div>
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+
+
+				<div id="aboutTab">
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+					It was around three months after I've been fired. I didn't dare to talk about it much, but it wouldn't that much of a mystery for someone to figure out why the short chick with the plaited hair isn't on the cash register giving wrong change to the old ladies anymore. To be perfectly honest, I was pretty devastated that I managed to fail even at working at the supermarket, where all you needed to get a grip was knowing how to count, wearing an “Olga” tag like a war medal, and acting like everything's okay at all times. Maybe that's why I ended up sneaking into it like a thief that day, out of stubbornness. It was the last sense of routine I had while everything was going under outside the window.<br>
+					<br>
+					I could barely get out the bed before four in the afternoon. And when I did, all I had planned was dragging my body before the tv to catch some telemarketing and dumb commercials until the sun was out again and I successfully forgot who I am and what I'm going through. Because what other choices did I have really? For the last two years I was jumping from one dead end job to the next, either until I get fired or until I quit. I was leaving on benefits and a sad amount of savings, and I was starting to accept the fact that this would be my life from now on. Like, what else did I really have to rely on? Studies? Big deal, the world wouldn't end with just one english teacher less. Friends? Don't get me started. Family? All I was left with was a mother with a mission to make me feel horrible every time we spoke on the phone because I wasn't bothering to go see her. But even if I did, what would I have to say to her? I was mentally collapsing. So I said “leave it for now” and kept the thought pushed back for later. That's the reason why on that particular day I didn't pick up whenever my mom was ringing this cherry ericsson I had at the time. It wasn't like I really needed to answer, I already knew everything by heart.<br>
+					<br>
+					“Have you seen how this girl you used to hang out at school does lately, Olga?”.<br>
+					<br>
+					No, mom, I haven't. It's been like ten years since I finished school.<br>
+					<br>
+					“She's studying this thing you used to like, she got settled, she even has her own house”.<br>
+					<br>
+					Well done for her I guess, and?<br>
+					<br>
+					“And you?”.<br>
+					<br>
+					I don't know what the hell I'm doing with my life anymore, mom.<br>
+					<br>
+					“But don't you ever think about your future?”.<br>
+					<br>
+					My long awaited future, huh? What a glorious future that was. It was so good, half of the people I used to know didn't make it halfway through.
+					<br><br><br>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<script type="text/javascript">
+			var duration = 5;
+			var arrayImg = new Array();
+			arrayImg[0] = "img/01.jpg";
+			arrayImg[1] = "img/02.jpg";
+			arrayImg[2] = "img/03.jpg";
+			arrayImg[3] = "img/04.jpg";
+			arrayImg[4] = "img/05.jpg";
+			arrayImg[5] = "img/06.jpg";
+			arrayImg[6] = "img/07.jpg";
+			arrayImg[7] = "img/08.jpg";
+			arrayImg[8] = "img/09.jpg";
+			arrayImg[9] = "img/10.jpg";
+			arrayImg[10] = "img/11.jpg";
+			arrayImg[11] = "img/12.jpg";
+			arrayImg[12] = "img/13.jpg";
+			arrayImg[13] = "img/14.jpg";
+
+			function getRandomImage(imgAr) {
+			    var num = Math.floor( Math.random() * imgAr.length );
+			    var img = imgAr[ num ];
+			    return img;
+			};
+
+			function fillImg(imgId) {
+			  var tgt = document.querySelector(imgId);
+			  tgt['src'] = getRandomImage(arrayImg);
+			};
+
+			function fader() {
+			  var tgt = document.querySelector('#photos');
+			  fillImg('#photos');
+			  tgt.style.opacity = 0.6;
+
+			  // var divsize = ((Math.random()*600) + 50).toFixed();
+
+			  var divsize = 500;
+
+			  tgt.style.width = divsize+'px';
+
+			  var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			  var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+
+			  tgt.style.left = posx+'px';
+			  tgt.style.top = posy+'px';
+
+			  tgt.ontransitionend = () => {
+			    if (tgt.style.opacity == 0.6) {
+			      setTimeout(() => {tgt.style.opacity = 0;}, duration*500);
+			    }
+			  }
+			}
+
+			var transitionTime = window.getComputedStyle(document.querySelector('#photos')).getPropertyValue('transition-duration').match(/\d+/)[0];
+			var totalTime = duration*1000 + transitionTime*2000;
+			setInterval(fader, totalTime);
+		</script>
+	</body>
+</html>
