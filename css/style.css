@@ -179,7 +179,25 @@ a:hover
 
 
 
-#photos {z-index: 1; position: absolute; transition: opacity 1s ease-in-out;}
+#slideshow
+{
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+.slide img
+{
+	z-index: 1;
+	opacity: 0.6;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+
 
 /*For desktop*/
 @media all and (orientation:landscape)

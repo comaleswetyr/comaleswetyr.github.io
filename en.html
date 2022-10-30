@@ -18,10 +18,26 @@
 
 	  	<script src="js/mobileMenu.js"></script>
 	  	<script src="js/hideShowTabs.js"></script>
+		<script src="js/slideshow.js"></script>
 	</head>
 
 	<body>
-		<img id="photos" src="" style="opacity: 0"/>
+		<div id="slideshow" class="position-fixed">
+			<div class="slide"><img src="img/01.jpg"/></div>
+			<div class="slide"><img src="img/02.jpg"/></div>
+			<div class="slide"><img src="img/03.jpg"/></div>
+			<div class="slide"><img src="img/04.jpg"/></div>
+			<div class="slide"><img src="img/05.jpg"/></div>
+			<div class="slide"><img src="img/06.jpg"/></div>
+			<div class="slide"><img src="img/07.jpg"/></div>
+			<div class="slide"><img src="img/08.jpg"/></div>
+			<div class="slide"><img src="img/09.jpg"/></div>
+			<div class="slide"><img src="img/10.jpg"/></div>
+			<div class="slide"><img src="img/11.jpg"/></div>
+			<div class="slide"><img src="img/12.jpg"/></div>
+			<div class="slide"><img src="img/13.jpg"/></div>
+			<div class="slide"><img src="img/14.jpg"/></div>
+		</div>
 
 		<div class="container">
 			<div class="header">
@@ -38,7 +54,7 @@
 
 			<div class="justify-content-center align-items-center" id="menu">
 				<img src="img/title_en_full_stacked.png">
-				<br><br><br><br><br><br>
+				<br><br><br><br><br><br><br>
 				<ul>
 					<li><div class = "maincategory"><a id="poems" href="#top">poems</a></div></li></li>
 					<ul>
@@ -438,68 +454,7 @@
 					My long awaited future, huh? What a glorious future that was. It was so good, half of the people I used to know didn't make it halfway through.
 					<br><br><br>
 				</div>
-
 			</div>
 		</div>
-
-
-
-		<script type="text/javascript">
-			var duration = 5;
-			var arrayImg = new Array();
-			arrayImg[0] = "img/01.jpg";
-			arrayImg[1] = "img/02.jpg";
-			arrayImg[2] = "img/03.jpg";
-			arrayImg[3] = "img/04.jpg";
-			arrayImg[4] = "img/05.jpg";
-			arrayImg[5] = "img/06.jpg";
-			arrayImg[6] = "img/07.jpg";
-			arrayImg[7] = "img/08.jpg";
-			arrayImg[8] = "img/09.jpg";
-			arrayImg[9] = "img/10.jpg";
-			arrayImg[10] = "img/11.jpg";
-			arrayImg[11] = "img/12.jpg";
-			arrayImg[12] = "img/13.jpg";
-			arrayImg[13] = "img/14.jpg";
-
-			function getRandomImage(imgAr) {
-			    var num = Math.floor( Math.random() * imgAr.length );
-			    var img = imgAr[ num ];
-			    return img;
-			};
-
-			function fillImg(imgId) {
-			  var tgt = document.querySelector(imgId);
-			  tgt['src'] = getRandomImage(arrayImg);
-			};
-
-			function fader() {
-			  var tgt = document.querySelector('#photos');
-			  fillImg('#photos');
-			  tgt.style.opacity = 0.6;
-
-			  // var divsize = ((Math.random()*600) + 50).toFixed();
-
-			  var divsize = 500;
-
-			  tgt.style.width = divsize+'px';
-
-			  var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
-			  var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
-
-			  tgt.style.left = posx+'px';
-			  tgt.style.top = posy+'px';
-
-			  tgt.ontransitionend = () => {
-			    if (tgt.style.opacity == 0.6) {
-			      setTimeout(() => {tgt.style.opacity = 0;}, duration*500);
-			    }
-			  }
-			}
-
-			var transitionTime = window.getComputedStyle(document.querySelector('#photos')).getPropertyValue('transition-duration').match(/\d+/)[0];
-			var totalTime = duration*1000 + transitionTime*2000;
-			setInterval(fader, totalTime);
-		</script>
 	</body>
 </html>
