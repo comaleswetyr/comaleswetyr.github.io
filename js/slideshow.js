@@ -9,7 +9,7 @@ $(function () {
             .css('min-height', '100%')
             .css('width', 'auto')
             .css('height', 'auto')
-            .hide().get(0)
+            .hide().get(Math.floor(Math.random() * 14))
         ).show();
 
     window.setInterval(swapImages, 15000);
