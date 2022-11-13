@@ -17,7 +17,7 @@ $(function () {
     function swapImages() {
         var $currentImg = $('.slide:visible');
         var $nextImg = $('.slide:hidden').eq(Math.floor(Math.random() * $('.slide:hidden').length));
-            speed = 4000;
+            speed = 15000;
 
         // animation speed should be the same for both images so we have a smooth change
         $currentImg.fadeOut(speed);
