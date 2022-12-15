@@ -43,6 +43,8 @@ body img {
 
 	position: relative;
 	z-index: 3;
+
+	padding-top: 30vh;
 }
 
 .poemTitle
@@ -64,7 +66,12 @@ body img {
 
 
 
-#aboutTab {text-align: justify}
+#aboutTab
+{
+	text-align: justify;
+
+	padding-top: 30vh;
+}
 
 
 
@@ -227,7 +234,7 @@ a:hover
 {
 	body
 	{
-		font-size: 30px;
+		font-size: 3vw;
 	}
 
 	.container
