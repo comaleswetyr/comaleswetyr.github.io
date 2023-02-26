@@ -75,6 +75,16 @@ body img {
 
 
 
+#signature
+{
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'Open Sans Ultra-Bold', sans-serif;
+	text-align: right;
+}
+
+
+
 #sidebar
 {
     top: 25%;
