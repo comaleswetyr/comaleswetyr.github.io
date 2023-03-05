@@ -45,12 +45,13 @@ body img {
 	z-index: 3;
 
 	padding-top: 30vh;
+
+	/* transform: scale(1.2, .8); */
+	transform: scale(1.2, .8) translate(10%, -10%);
 }
 
 .poemTitle
 {
-	display: inline-block;
-	transform: scale(1.2, 0.8);
 	font-family: 'Open Sans Ultra-Bold', sans-serif;
 	letter-spacing: -2.5px;
 	font-style: italic;
@@ -71,6 +72,8 @@ body img {
 	text-align: justify;
 
 	padding-top: 30vh;
+
+	transform: scale(1.2, .8) translate(0%, -10%);
 }
 
 
@@ -95,7 +98,7 @@ body img {
 
 #sidebar img {width: 100%}
 
-
+#sidebartext {transform: scale(1.2, .8) translate(0%, 0%)}
 
 a
 {
@@ -203,6 +206,8 @@ a:hover
     -o-transform: translate(-50%, 0%);
 }
 
+#menutext {transform: scale(1.2, .8) translate(10%, 0%)}
+
 
 
 #slideshow
@@ -272,4 +277,19 @@ a:hover
 		-o-background-size: cover;
 		background-size: cover;
 	}
+
+	.poemPage
+	{
+	/*	height: 100%;*/
+		width: 100%;
+
+		position: relative;
+		z-index: 3;
+
+		padding-top: 30vh;
+
+		/* transform: scale(1.2, .8); */
+		transform: scale(1.2, .8) translate(0%, -10%);
+	}
+
 }
