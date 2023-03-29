@@ -70,13 +70,13 @@ body img {
 #aboutTab
 {
 	text-align: justify;
-
 	padding-top: 30vh;
-
-	transform: scale(1.2, .8) translate(0%, -10%);
 }
 
-
+#aboutText
+{
+	transform: scale(1.2, .8) translate(0%, -10%);
+}
 
 #signature
 {
